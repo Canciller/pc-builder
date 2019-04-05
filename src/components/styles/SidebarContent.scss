@@ -1,0 +1,20 @@
+$sidebar-content-title-padding: 12px;
+
+.sidebar-content {
+
+}
+
+.sidebar-content-title {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        display: block;
+        padding: $sidebar-content-title-padding;
+    }
+}
+
+.sidebar-back {
+    font-weight: bold;
+    flex: 1;
+}

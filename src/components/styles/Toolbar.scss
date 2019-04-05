@@ -1,0 +1,38 @@
+$toolbar-padding: 20px;
+
+#toolbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: $toolbar-padding;
+
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        margin: 0 10px;
+    }
+
+    button {
+        border-radius: 2px;
+    }
+}
+
+#toolbar > div {
+    display: flex;
+    align-items: center;
+}
+
+#toolbar-button-new {
+    margin: 0 10px;
+}
+
+#toolbar-builder-link {
+    display: flex;
+    align-items: center;
+
+    p:hover {
+        text-decoration: underline;
+    }
+}

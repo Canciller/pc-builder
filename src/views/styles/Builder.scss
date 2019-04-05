@@ -1,0 +1,17 @@
+#builder {
+    .col-1 {
+        flex: 0.4;
+    }
+
+    .col-2 {
+        flex: 1;
+    }
+
+    .col-3, .col-4 {
+        flex: 0.2;
+    }
+}
+
+#builder-total {
+    text-align: right;
+}

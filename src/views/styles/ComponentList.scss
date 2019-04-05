@@ -1,0 +1,32 @@
+$content-separation: 15px;
+
+#component-list {
+    .col-1 { flex: 2 }
+    .col-2 { flex: 0.2 }
+    .col-3 { flex: 0.2 }
+
+    .table-header p {
+        color: #f8f8f2;
+        padding: 0 5px;
+        -webkit-user-select: none; /* Safari 3.1+ */
+        -moz-user-select: none; /* Firefox 2+ */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none; /* Standard syntax */
+    }
+}
+
+#component-list-content {
+    flex: 1;
+    padding: 10px;
+}
+
+#component-list-empty {
+    text-align: center;
+    padding: 20px;
+
+    p {
+        font-size: 1.2em;
+        margin: auto;
+    }
+}
+

@@ -1,0 +1,22 @@
+#build-settings {
+    display: flex;
+    flex-direction: column;
+
+    input, textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.settings-title,
+.settings-content {
+    padding: 10px;
+}
+
+.settings-content {
+    border-bottom: 1px solid;
+}
+
+#build-settings-save-button {
+}

@@ -1,0 +1,23 @@
+#menu {
+    list-style: none;
+
+    li {
+        border-bottom: 1px solid;
+    }
+
+    a {
+        display: block;
+        padding: 12px;
+    }
+}
+
+.menu-small-item, #menu-show {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+#menu-show {
+    border: 0;
+}

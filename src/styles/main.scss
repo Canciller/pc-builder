@@ -1,0 +1,284 @@
+// Variables
+
+$page-min-width: 800px;
+
+// Global
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+button, a, input[type='submit'] {
+    cursor: pointer;
+    outline: none;
+}
+
+input[type='text'],
+textarea {
+    font-size: 1em;
+    font-family: sans-serif;
+    border: 0;
+    padding: 5px;
+    border-radius: 2px;
+    resize: vertical;
+    width: 100%;
+}
+
+.root-container {
+    min-width: $page-min-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.root-content {
+    display: flex;
+    flex: 1;
+}
+
+.container {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+    overflow: auto;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+
+    background-color: #f8f8f2;
+}
+
+.content-header {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 40px 30px;
+
+    background-color: #3b4082;
+
+    * {
+        color: #f8f8f2;
+    }
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+
+    border-color: silver;
+}
+
+.table-column,
+.table-header {
+    padding: 5px;
+}
+
+button, input[type='submit'] {
+    color: #f8f8f2;
+    background-color: #333770;
+    border: 0;
+    padding: 5px 10px;
+
+    &:hover {
+        background-color: #3b4082;
+    }
+}
+
+button, input, a {
+    -webkit-transition: background .1s linear;
+    -moz-transition: background .1s linear;
+    -ms-transition: background .1s linear;
+    -o-transition: background .1s linear;
+    transition: background .1s linear;
+}
+
+#menu, #menu-small, .sidebar-content-title, #my-builds {
+    * {
+        -webkit-transition: background .1s linear;
+        -moz-transition: background .1s linear;
+        -ms-transition: background .1s linear;
+        -o-transition: background .1s linear;
+        transition: background .1s linear;
+    }
+}
+
+input[type='text'],
+input[type='password'],
+button {
+    border-radius: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+// Toolbar
+
+#toolbar {
+    background-color: #10121a;
+
+    a, span {
+        color: #f8f8f2;
+    }
+
+    h1 {
+        color: #f8f8f2;
+        &:hover {
+            color: #9999ff;
+        }
+    }
+}
+
+// Sidebar
+
+$sidebar-width: 21%;
+
+#sidebar {
+    width: $sidebar-width;
+}
+
+#sidebar, 
+#sidebar-small {
+    background-color: #21222c;
+}
+
+// Sidebar Content
+
+.sidebar-content-title {
+    background-color: #1a1b23;
+
+    a {
+        color: #7d7f8e;
+    }
+}
+
+.sidebar-back,
+.sidebar-hide {
+    &:hover {
+        color: #f8f8f2;
+    }
+}
+
+// Menu
+
+#menu {
+    .menu-item {
+        * {
+            color: #f8f8f2;
+            text-decoration: none;
+        }
+
+        border-color: #303138;
+
+        &:hover {
+            background-color: #282a36;
+        }
+    }
+}
+
+#menu-show {
+    background-color: #1a1b23;
+    color: #7d7f8e;
+
+    &:hover {
+        color: #f8f8f2;
+    }
+
+}
+
+#menu-small {
+    .menu-small-item {
+        border-color: #303138;
+        color: #f8f8f2;
+
+        &:hover {
+            background-color: #282a36;
+        }
+    }
+}
+
+// Builder
+
+.settings-title {
+    color: #f8f8f2;
+    background-color: #282a36;
+}
+
+.settings-content {
+    border-color: #303138;
+}
+
+#builder {
+    flex: 1;
+
+    a {
+        color: #333770;
+        text-decoration: none;
+    }
+}
+
+// Component List
+
+#component-list {
+    a {
+        color: #333770;
+        text-decoration: none;
+    }
+}
+
+#component-list-empty {
+    * {
+        color: #7d7f8e;
+    }
+}
+
+.component-rating {
+    //color: #ffd700;
+    color: #3b4082;
+}
+
+// My Builds
+
+#my-builds {
+    .build {
+        * {
+            color: #f8f8f2;
+            text-decoration: none;
+        }
+
+        a {
+            display: block;
+        }
+
+        border-color: #303138;
+
+        &:hover {
+            background-color: #282a36;
+        }
+    }
+}
+
+#my-builds-content {
+    background-color: #282a36;
+}
+
+// Build Detail
+
+#build-detail-division {
+    width: 1px;
+    height: 30px;
+}
