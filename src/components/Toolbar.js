@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { faTools, faSave } from '@fortawesome/free-solid-svg-icons';
+import { faTools, faSave, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import AppContext from '../AppContext';
@@ -20,6 +20,18 @@ export default class Toolbar extends Component {
                     </NavLink>
                 </div>
                 <div id='toolbar-right'>
+                    <AppContext.Consumer>
+                        { context => {
+                            return (
+                                <button onClick={ () => {
+                                    context.build.deleteParts();
+                                    context.build.resetInfo();
+                                }} id='toolbar-button-new'>
+                                    <FontAwesomeIcon icon={ faPlus } />{' '}New
+                                </button>
+                            )
+                        }}
+                    </AppContext.Consumer>
                     <AppContext.Consumer>
                         { context => (
                             <button onClick={ () => {

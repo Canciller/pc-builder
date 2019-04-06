@@ -92,7 +92,13 @@ class AppProvider extends Component {
                     build.parts = [];
                     build.priceTotal = 0;
                     this.setState({ build });
-                    console.log(this.state.build.parts);
+                },
+                resetInfo: () => {
+                    let build = this.state.build;
+                    build.name = 'untitled';
+                    build.author = '';
+                    build.description = '';
+                    this.setState({ build });
                 },
                 name: 'untitled',
                 author: '',

@@ -33,7 +33,7 @@ export default class ComponentDetail extends Component {
                 info.push(
                     <div key={key} className='table-row'>
                         <div className='table-column bold'>
-                            {(key.charAt(0).toUpperCase() + key.slice(1)).replace(/-/g, ' ')}
+                            {(key.charAt(0).toUpperCase() + key.slice(1)).replace(/-/g, ' ').replace(/_/g, ' ')}
                         </div>
                         <div className='table-column'>
                             {data[key]}
