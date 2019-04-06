@@ -51,7 +51,7 @@ class Part extends Component {
                 </div>
                 <Rating className='component-rating table-column col-2' rating={Math.floor(data.rating)} />
                 <div className='table-column col-3 bold'>
-                    ${data.price.toFixed(2)}
+                    ${data.price && data.price.toFixed(2)}
                 </div>
                 <div className='table-column col-4'>
                     <AppContext.Consumer>
@@ -80,7 +80,9 @@ export default class ComponentList extends Component {
         let props = this.props;
         fetch('http://localhost:3000/api/' + props.api)
             .then(res => res.json())
-            .then(data => this.setState({ data }))
+            .then(data => {
+                console.log(data);
+                this.setState({ data })})
             .catch(err => {
                 console.log(err);
             });
